@@ -1,0 +1,210 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==== HELPER COLORS FOR LAYOUT ==== 
+
+
+
+.left{
+  background-color: pink;
+  color: greenyellow;
+}
+
+right {
+  background-color: yellow;
+}
+
+header {
+  background-color: grey;
+}
+article {
+  background-color: aqua;
+}*/
+
+/*sötét: #1B2726; szöld: #3C5148; zöld:#6B8E4E; vzöld: #B2C5B3; szürke: #D5DDDE*/
+
+/* ==== BASE STYLES ==== */
+body{
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #3C5148; 
+  background-color: #D5DDDE;
+}
+
+
+/* === LEFT SIDE === */
+
+.left{
+  float: left;
+  width:100vw;
+  background-color: #6B8E4E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  float: left;
+  padding: 5% 2% 5% 0%;
+  width: 75%;  
+}
+
+img:hover{
+  /*animation: skew 10s infinite;
+  transform: skew(15deg);
+  animation-direction: left;
+  */
+  transform: rotate(-15deg);
+  opacity: .8;
+}
+
+@media (min-width: 768px) {
+  .left {
+    position: fixed;
+	height: 100%;
+    width: 40%;
+    padding-right: 0.5%;
+		}
+}
+
+@media (min-width: 1025px) {
+.left {
+    position: fixed;
+	height: 100%;
+    width: 40%;
+    padding-left: 3%;
+		}	    
+}
+
+/* === RIGHT SIDE === */
+header, .copyright, .contact {
+  text-align: center;
+  background-color: #B2C5B3;
+}
+
+.right{
+  background-color: #D5DDDE;
+  box-sizing: border-box;
+  height: 100%;
+  
+}
+
+header{
+  padding: 3rem;
+  margin-top: 1rem;
+  
+}
+h1, h2, h3, h4{
+  font-family: 'Karla', sans-serif;
+  color: #1B2726;
+}
+
+h1{
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+h2{
+  padding: 4rem;
+  font-size: 2em;
+  
+  font-weight: bold;
+}
+
+
+.moto{
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 3rem;
+  padding:2rem; 
+}
+
+.contact{
+  background-color: #B2C5B3;
+  margin:2% 0 2% 0;
+  padding: 4rem;
+}
+.contact a {
+  width: 5%;
+  padding: 0 10%;
+  float: left;
+  
+}
+
+a{
+  text-decoration-line: none;
+  color: #1B2726;
+}
+
+footer {
+ 
+
+}
+footer p a:hoover{
+  color: #D5DDDE;
+}
+
+
+@media (min-width: 768px) {
+  right {
+	height: 100%;
+    width: 60%;
+    padding: 0 70px 0 70px;
+    float: right;
+		}
+}
+
+@media (min-width: 1025px) {
+right {
+   	height: 100%;
+    width: 60%;
+    padding-right: 60px;
+    float: right;
+		}
+}
+	    
+
